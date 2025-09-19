@@ -25,15 +25,15 @@ const Navbar = () => {
       </div>
 
       <div className="flex items-center container mx-auto  bg-gray-800 text-gray-400 px-6   clip-right -ml-px gap-4">
-        <span>
-          Compare: <span className="text-blue-400">0</span>
-        </span>
-        <span>
-          Currency: <strong>USD</strong>
-        </span>
-        <span>
-          Language: <strong>EN</strong>
-        </span>
+        <p>
+          Compare: <span className="text-white ">0</span>
+        </p>
+        <p>
+          Currency: <span className="text-white">USD</span>
+        </p>
+        <p>
+          Language: <span className="text-white">EN</span>
+        </p>
       </div>
     </div>
   );
