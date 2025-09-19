@@ -1,42 +1,42 @@
-import React from 'react'
+import React from "react";
 
 const Navbar = () => {
   return (
-    <div className='bg-red-700'> 
-        <div className="container mx-auto flex items-center justify-between">
-            <div className="left w-[40%] py-5">
-                <ul className='flex items-center gap-10'>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Contacts</a></li>
-                    <li><a href="#">Track Order</a></li>
-                </ul>
-            </div>
-            <div className="center w-[20%] bg-white py-5">
-                Auto parts for Cars, trucks and motorcycles
-            </div>
-            <div className="right flex items-center justify-end py-5 gap-10 bg-gray-400 w-[40%]">
-                <a href="#">Compare: 0</a>
-                <div className="">
-                    <label htmlFor="currency">Currency:</label>
-                    <select name="currency" id="">
-                    <option value="usd">USD</option>
-                    <option value="Euro">Euro</option>
-                    <option value="Pound">Pound</option>
-                </select>
-                </div>
-                <div className="">
-                    <label htmlFor="Language">Language:</label>
-                    <select name="english" id="">
-                    <option value="english">english</option>
-                    <option value="Russian">Russian</option>
-                    <option value="RTL">RTL</option>
-                </select>
-                </div>
-                 
-            </div>
-        </div>
-    </div>
-  )
-}
+    <div className="flex  ">
+      <div className="flex items-center justify-end container mx-auto gap-4 bg-red-600 text-white px-6   clip-left -ml-px">
+        <span>
+          <strong>Call Us:</strong> (800) 060-0730
+        </span>
+        <a href="#" className="hover:underline">
+          About Us
+        </a>
+        <a href="#" className="hover:underline">
+          Contacts
+        </a>
+        <a href="#" className="hover:underline">
+          Track Order
+        </a>
+      </div>
 
-export default Navbar
+      <div className="text-center ">
+        <h3 className="w-[390px] text-[14px] py-1 font-normal text-gray-600">
+          AUTO PARTS FOR CARS, TRUCKS AND MOTORCYCLES
+        </h3>
+      </div>
+
+      <div className="flex items-center container mx-auto  bg-gray-800 text-gray-400 px-6   clip-right -ml-px gap-4">
+        <span>
+          Compare: <span className="text-blue-400">0</span>
+        </span>
+        <span>
+          Currency: <strong>USD</strong>
+        </span>
+        <span>
+          Language: <strong>EN</strong>
+        </span>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
